@@ -1,0 +1,51 @@
+README
+--------------------------------------------
+Blast DB Indexer Mini Pipeline for Galaxy v. 0.1
+(c) 2011 Jacob Israel Cervantes Luevano
+http://www.langebio.cinvestav.mx
+http://www.langebio.cinvestav.mx/bioinformatica/jacob
+Langebio Cinvestav, Dept. of Bioinformatics 
+--------------------------------------------
+
+TABLE OF CONTENTS
+I.   INTRODUCTION		
+II.  DOCUMENTATION
+III. CONTACT INFO
+IV.  REPORTING BUGS
+
+Project WebSite: http://www.jacob-israel.com.mx/bio/blog
+
+I. INTRODUCTION
+script allows to format blast databases, set galaxy reference format and to create galaxy reference megablast loc files
+
+II. DOCUMENTATION
+Usage:
+
+$ set_galaxy_blastdb.sh -help
+$ set_galaxy_blastdb.sh -fasta filename -p T|F -n blastdb_name -fastadesc ncbi-gk|other
+
+where :
+
+-fasta filename
+-p T ; if your database are protein sequences
+-p F ; if your database are nucleotide sequences
+-n blastdb_name ; set database filename for Galaxy Loc File
+-fastadesc ncbi-gk ; option if your fasta ID is like gi|gi-number|gb|accesión|locus
+-fastadesc other ; your own sequence IDs
+
+to run :
+$ ./set_galaxy_blastdb.sh -fasta /media/xlinux/genomes/galaxy/palomero/megablast/genome.fasta -p F -n my-genomedb-name -fastadesc ncbi-gk
+
+III. CONTACT INFO
+Feel free to contact me if you have any comments, suggestions, questions, complaints, whatever.
+
+Jacob Israel Cervantes Luevano
+Langebio Cinvestav, Dept. of Bioinformatics
+Irapuato, Guanajuato México
+
+Email: jacob@jacob-israel.com.mx
+Email: jacobnix@gmail.com
+WebSite: http://www.jacob-israel.com.mx/bio/blog
+
+IV. REPORTING BUGS
+Email me please
